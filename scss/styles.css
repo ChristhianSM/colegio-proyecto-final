@@ -543,6 +543,8 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
      object-position: center;
   -webkit-transition: all 1s;
   transition: all 1s;
+  -webkit-box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.57);
+          box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.57);
 }
 
 #nosotros .contenedorNosotros .cardNosotros .imagen:hover img {
@@ -910,6 +912,8 @@ main#contacto .contenedor .ubicacion .titulo {
 
 main#contacto .contenedor .ubicacion .mapa {
   width: 100%;
+  -webkit-box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.57);
+          box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.57);
 }
 
 main#contacto .contenedor .ubicacion .mapa iframe {
@@ -939,6 +943,8 @@ main#contacto .contenedor .formulario {
   border: 1px solid #333333;
   border-radius: 5px;
   padding: 30px;
+  -webkit-box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.57);
+          box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.57);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
