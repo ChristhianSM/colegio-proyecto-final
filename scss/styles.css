@@ -1,0 +1,1588 @@
+header .menuNavegacion {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .menuNavegacion .logo {
+  width: 100px;
+  height: 70px;
+  display: inline-block;
+  margin: 10px;
+}
+
+header .menuNavegacion .logo img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .menuNavegacion .enlaces a {
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+header .menuNavegacion .enlaces a:hover {
+  color: #7c0e04;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+header .menuNavegacion .enlaces a:hover::before {
+  width: 100%;
+}
+
+header .menuNavegacion .enlaces a::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #7c0e04;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+header .menuNavegacion .enlaces a:nth-child(5) {
+  background-color: #04175d;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-transform: none;
+          transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .enlaces a {
+    color: white;
+  }
+}
+
+header .menuNavegacion .enlaces a i {
+  margin: 0 8px;
+}
+
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .enlaces {
+    padding-top: 30px;
+    position: fixed;
+    background-color: #303a52;
+    left: 0;
+    top: 90px;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .enlaces.enlacesDos {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+header .menuNavegacion .hamburguesa {
+  height: 100%;
+  width: 70px;
+  text-align: center;
+  display: none;
+}
+
+header .menuNavegacion .hamburguesa img {
+  padding: 23px 23px;
+}
+
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .hamburguesa {
+    display: block;
+  }
+}
+
+main #index {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(130, 39, 39, 0.609)), to(rgba(74, 69, 73, 0))), url("../img/imagen-8.jpg");
+  background: linear-gradient(to right, rgba(130, 39, 39, 0.609), rgba(74, 69, 73, 0)), url("../img/imagen-8.jpg");
+  width: 100%;
+  height: 900px;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+main #index .textos {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  text-align: center;
+}
+
+main #index .textos .titulo {
+  font-size: 5.5rem;
+  margin-bottom: 10px;
+}
+
+main #index .textos .parrafo {
+  font-size: 2.3rem;
+}
+
+main {
+  background-color: white;
+}
+
+main .contenedor {
+  width: 70%;
+}
+
+main #beneficios .titulo {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #04175d;
+}
+
+main #beneficios .contenedorBeneficios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+main #beneficios .contenedorBeneficios .cardBeneficio {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+main #beneficios .contenedorBeneficios .cardBeneficio span {
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  color: #04175d;
+}
+
+main #beneficios .contenedorBeneficios .cardBeneficio .subtitulo {
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (max-width: 320px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio .subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+}
+
+main #admision .contenedorAdmision .titulo {
+  margin-top: 100px;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  text-align: left;
+  color: #04175d;
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .titulo {
+    font-size: 1.3rem;
+  }
+}
+
+main #admision .contenedorAdmision .parrafo {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .parrafo {
+    font-size: 1rem;
+  }
+}
+
+main #admision .contenedorAdmision .formularioAdmision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main #admision .contenedorAdmision .formularioAdmision input {
+  width: 48%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 425px) {
+  main #admision .contenedorAdmision .formularioAdmision input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .formularioAdmision input {
+    padding: 10px 5px;
+    font-size: 0.8rem;
+  }
+}
+
+main #admision .contenedorAdmision .formularioAdmision select {
+  width: 48%;
+  height: 45px;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.1rem;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 425px) {
+  main #admision .contenedorAdmision .formularioAdmision select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .formularioAdmision select {
+    height: 30px;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+
+main #admision .contenedorAdmision .formularioAdmision .terminos {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+main #admision .contenedorAdmision .formularioAdmision .terminos input {
+  width: 2%;
+  text-align: left;
+}
+
+@media screen and (max-width: 425px) {
+  main #admision .contenedorAdmision .formularioAdmision .terminos input {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .formularioAdmision .terminos input {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #admision .contenedorAdmision .formularioAdmision .terminos label a {
+    font-size: 0.8rem;
+  }
+}
+
+main #admision .contenedorAdmision .formularioAdmision .botonEnviar {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+main #admision .contenedorAdmision .formularioAdmision .botonEnviar input {
+  width: 15%;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #04175d;
+  color: white;
+}
+
+main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover {
+  background-color: #0b2a9a;
+  color: white;
+}
+
+@media screen and (max-width: 425px) {
+  main #admision .contenedorAdmision .formularioAdmision .botonEnviar input {
+    width: 35%;
+  }
+}
+
+#nosotros {
+  /* Section equipo */
+  /* Section Plataforma */
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros .contenedor {
+    width: 95%;
+  }
+}
+
+#nosotros .textoFlotante {
+  margin-top: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(130, 39, 39, 0.609)), to(rgba(74, 69, 73, 0))), url("../img/1960.jpg");
+  background: linear-gradient(to right, rgba(130, 39, 39, 0.609), rgba(74, 69, 73, 0)), url("../img/1960.jpg");
+  width: 100%;
+  height: 900px;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+#nosotros .textoFlotante .textos {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  text-align: center;
+}
+
+#nosotros .textoFlotante .textos .titulo {
+  font-size: 5.5rem;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros .textoFlotante .textos .titulo {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nosotros .textoFlotante .textos .titulo {
+    margin-top: 0;
+  }
+}
+
+#nosotros .textoFlotante .textos .parrafo {
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros .textoFlotante .textos .parrafo {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nosotros .textoFlotante .textos .parrafo {
+    font-size: 0.9rem;
+  }
+}
+
+#nosotros h1 {
+  margin-bottom: 55px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #04175d;
+}
+
+#nosotros .contenedorNosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+#nosotros .contenedorNosotros .cardNosotros {
+  grid-column: 1/-1;
+  background-color: white;
+  padding: 10px 0;
+}
+
+#nosotros .contenedorNosotros .cardNosotros #quienesSomos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#nosotros .contenedorNosotros .cardNosotros .contenedorTextos {
+  width: 40%;
+}
+
+#nosotros .contenedorNosotros .cardNosotros .contenedorTextos .titulo {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #7c0e04;
+}
+
+#nosotros .contenedorNosotros .cardNosotros .contenedorTextos .parrafo {
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .contenedorNosotros .cardNosotros .contenedorTextos {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+#nosotros .contenedorNosotros .cardNosotros .imagen {
+  width: 50%;
+}
+
+#nosotros .contenedorNosotros .cardNosotros .imagen img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#nosotros .contenedorNosotros .cardNosotros .imagen:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .contenedorNosotros .cardNosotros .imagen {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+#nosotros .contenedorNosotros .cardNosotros #mision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .contenedorNosotros .cardNosotros #mision img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+#nosotros .contenedorNosotros .cardNosotros #vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#nosotros .contenedorNosotros .cardNosotros #historia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros .contenedorNosotros .cardNosotros #historia img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+#nosotros #equipo {
+  margin-top: 30px;
+}
+
+#nosotros #equipo .titulo {
+  margin-top: 100px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #04175d;
+}
+
+#nosotros #equipo .contenedorEquipo {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#nosotros #equipo .contenedorEquipo .cardEquipo {
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+#nosotros #equipo .contenedorEquipo .cardEquipo img {
+  width: 85%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros #equipo .contenedorEquipo .cardEquipo img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros #equipo .contenedorEquipo .cardEquipo img {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+#nosotros #equipo .contenedorEquipo .cardEquipo:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.5;
+}
+
+#nosotros #equipo .contenedorEquipo .cardEquipo .parrafoOculto {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: -30%;
+  color: black;
+  font-size: 1.3rem;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#nosotros #equipo .contenedorEquipo .cardEquipo:hover p {
+  bottom: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros #equipo .contenedorEquipo {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nosotros #equipo .contenedorEquipo {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#nosotros #plataforma .titulo {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #7c0e04;
+}
+
+#nosotros #plataforma .parrafo {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#nosotros #plataforma .contenedorPlataforma {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 10px;
+}
+
+#nosotros #plataforma .contenedorPlataforma .imagenesPlataforma {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#nosotros #plataforma .contenedorPlataforma .imagen {
+  width: 45%;
+  margin: 10px;
+}
+
+#nosotros #plataforma .contenedorPlataforma .imagen img {
+  width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros #plataforma .contenedorPlataforma .imagen img {
+    width: 100%;
+    height: 130px;
+  }
+}
+
+#nosotros #plataforma .contenedorPlataforma .textosPlataforma {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+#nosotros #plataforma .contenedorPlataforma .textosPlataforma .subtitulo {
+  font-size: 1.8rem;
+}
+
+#nosotros #plataforma .contenedorPlataforma .textosPlataforma .parrafo {
+  padding: 0 50px;
+}
+
+#nosotros #plataforma .contenedorPlataforma .textosPlataforma a {
+  padding: 10px;
+  background-color: #04175d;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  #nosotros #plataforma .contenedorPlataforma .textosPlataforma {
+    text-align: center;
+  }
+}
+
+/* Bootstrap */
+:root {
+  --color-title: black;
+}
+
+.bg-azul {
+  background-color: #04175d;
+  color: white !important;
+}
+
+.black-title {
+  color: --color-title !important;
+}
+
+.blue-title {
+  color: #04175d !important;
+}
+
+.red-title {
+  color: #7c0e04;
+}
+
+/* contacto.html */
+/* Main */
+main#contacto .textoFlotante {
+  margin-top: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(130, 39, 39, 0.609)), to(rgba(74, 69, 73, 0))), url("../img/educacion_distancia.jpg");
+  background: linear-gradient(to right, rgba(130, 39, 39, 0.609), rgba(74, 69, 73, 0)), url("../img/educacion_distancia.jpg");
+  width: 100%;
+  height: 900px;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+main#contacto .textoFlotante .textos {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  text-align: center;
+}
+
+main#contacto .textoFlotante .textos .titulo {
+  font-size: 5.5rem;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .textoFlotante .textos .titulo {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main#contacto .textoFlotante .textos .titulo {
+    margin-top: 0;
+  }
+}
+
+main#contacto .textoFlotante .textos .parrafo {
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .textoFlotante .textos .parrafo {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main#contacto .textoFlotante .textos .parrafo {
+    font-size: 0.9rem;
+  }
+}
+
+main#contacto .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 70%;
+}
+
+main#contacto .contenedor .ubicacion {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main#contacto .contenedor .ubicacion .titulo {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: #7c0e04;
+}
+
+main#contacto .contenedor .ubicacion .mapa {
+  width: 100%;
+}
+
+main#contacto .contenedor .ubicacion .mapa iframe {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .ubicacion .mapa iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .ubicacion {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .contenedor .ubicacion {
+    width: 90%;
+  }
+}
+
+main#contacto .contenedor .formulario {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 40%;
+}
+
+main#contacto .contenedor .formulario .titulo {
+  font-size: 2rem;
+  color: #7c0e04;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .formulario .titulo {
+    margin: 10px 0;
+  }
+}
+
+main#contacto .contenedor .formulario select {
+  width: 80%;
+  height: 35px;
+  border: 1px solid #333333;
+  border: none;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .formulario select {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .contenedor .formulario select {
+    width: 100%;
+  }
+}
+
+main#contacto .contenedor .formulario .grupo {
+  width: 80%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+main#contacto .contenedor .formulario .grupo input {
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px 5px;
+  border: none;
+  border-bottom: 1px solid #333333;
+}
+
+main#contacto .contenedor .formulario .grupo input:focus {
+  outline: none;
+  color: #5e5d5d;
+}
+
+main#contacto .contenedor .formulario .grupo input:focus ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #2196f3;
+}
+
+main#contacto .contenedor .formulario .grupo input:focus ~ .barra::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .formulario .grupo input {
+    padding: 5px 5px;
+  }
+}
+
+main#contacto .contenedor .formulario .grupo label {
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  pointer-events: none;
+}
+
+main#contacto .contenedor .formulario .grupo .barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+main#contacto .contenedor .formulario .grupo .barra::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#6a82fb), to(#fc5c7d));
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  left: 0%;
+}
+
+main#contacto .contenedor .formulario .grupo textarea {
+  display: block;
+  width: 100%;
+  padding-left: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333333;
+  resize: none;
+}
+
+main#contacto .contenedor .formulario .grupo textarea:focus {
+  outline: none;
+  color: #5e5d5d;
+}
+
+main#contacto .contenedor .formulario .grupo textarea:focus ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #2196f3;
+}
+
+main#contacto .contenedor .formulario .grupo textarea:focus ~ .barra::before {
+  width: 100%;
+}
+
+main#contacto .contenedor .formulario .boton {
+  width: 35%;
+  background-color: #04175d;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 0;
+  margin-bottom: 0;
+  border: none;
+  outline: none;
+}
+
+main#contacto .contenedor .formulario .boton:hover {
+  background-color: #04175d;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor .formulario {
+    width: 80%;
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .contenedor .formulario {
+    width: 90%;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main#contacto .contenedor {
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main#contacto .contenedor {
+    width: 100%;
+  }
+}
+
+/* admision.html */
+/* Header */
+@media screen and (max-width: 768px) {
+  #admision_alumnos .contenedor {
+    width: 90%;
+  }
+}
+
+#admision_alumnos .textoFlotante {
+  margin-top: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(130, 39, 39, 0.609)), to(rgba(74, 69, 73, 0))), url("../img/el-impacto-2.jpg");
+  background: linear-gradient(to right, rgba(130, 39, 39, 0.609), rgba(74, 69, 73, 0)), url("../img/el-impacto-2.jpg");
+  width: 100%;
+  height: 900px;
+  background-size: 100% 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+#admision_alumnos .textoFlotante .textos {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  text-align: center;
+}
+
+#admision_alumnos .textoFlotante .textos .titulo {
+  font-size: 5.5rem;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos .textoFlotante .textos .titulo {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #admision_alumnos .textoFlotante .textos .titulo {
+    margin-top: 0;
+  }
+}
+
+#admision_alumnos .textoFlotante .textos .parrafo {
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos .textoFlotante .textos .parrafo {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #admision_alumnos .textoFlotante .textos .parrafo {
+    font-size: 0.9rem;
+  }
+}
+
+#admision_alumnos #admision .vacantes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+}
+
+#admision_alumnos #admision .vacantes .titulo {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #04175d;
+}
+
+@media screen and (max-width: 320px) {
+  #admision_alumnos #admision .vacantes .titulo {
+    font-size: 1.5rem;
+  }
+}
+
+#admision_alumnos #admision .vacantes .subtitulo {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #7c0e04;
+}
+
+#admision_alumnos #admision .vacantes table {
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#admision_alumnos #admision .vacantes table th {
+  background-color: #081d68d7;
+  color: white;
+  padding: 15px 50px;
+}
+
+@media screen and (max-width: 320px) {
+  #admision_alumnos #admision .vacantes table th {
+    padding: 10px 5px;
+  }
+}
+
+#admision_alumnos #admision .vacantes table td {
+  padding: 15px 50px;
+}
+
+@media screen and (max-width: 320px) {
+  #admision_alumnos #admision .vacantes table td {
+    padding: 10px 5px;
+  }
+}
+
+#admision_alumnos #criterios_admision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+}
+
+#admision_alumnos #criterios_admision .subtitulo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#admision_alumnos #criterios_admision ol {
+  width: 100%;
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+
+#admision_alumnos #criterios_admision ol li {
+  margin-bottom: 10px;
+}
+
+#admision_alumnos #formularioAdmision .contenedor {
+  margin-top: 0;
+  padding-top: 0px;
+  width: 70%;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .titulo {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: left;
+  color: #04175d;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .parrafo {
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: left;
+  color: #7c0e04;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .formulario {
+  width: 100%;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .formulario .formularioAdmision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision .formulario .formularioAdmision {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision input {
+  width: 48%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.308);
+  border-radius: 10px;
+  outline: none;
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision input {
+    width: 90%;
+  }
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision select {
+  width: 48%;
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.308);
+  border-radius: 10px;
+  outline: none;
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision select {
+    width: 90%;
+  }
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .terminos {
+  width: 100%;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .terminos input {
+  width: 2%;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .terminos label {
+  font-weight: 700;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .botonEnviar {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .botonEnviar input {
+  width: 10%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+}
+
+#admision_alumnos #formularioAdmision .contenedor .contenedor-admision .botonEnviar input:hover {
+  background-color: #04175d;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #admision_alumnos #formularioAdmision .contenedor {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos #formularioAdmision .contenedor {
+    text-align: center;
+  }
+}
+
+#piePagina {
+  background: -webkit-gradient(linear, left top, right top, from(#09191df0), to(#171111de)), url("../img/imagen-5.jpeg");
+  background: linear-gradient(to right, #09191df0, #171111de), url("../img/imagen-5.jpeg");
+  /* background-image: url("../img/imagen-portada.jpeg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+#piePagina .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 90%;
+}
+
+#piePagina .contenedor .frame {
+  width: 33%;
+}
+
+#piePagina .contenedor .frame .titulo {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+#piePagina .contenedor .frame iframe {
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #piePagina .contenedor .frame {
+    display: none;
+  }
+}
+
+#piePagina .contenedor .colegio {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+}
+
+#piePagina .contenedor .colegio .titulo {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 320px) {
+  #piePagina .contenedor .colegio .titulo {
+    font-size: 1.5rem;
+  }
+}
+
+#piePagina .contenedor .colegio a {
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 25px;
+  color: white;
+}
+
+#piePagina .contenedor .colegio a:hover {
+  text-decoration: underline;
+  color: #04175d;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#piePagina .contenedor .redesSociales {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+}
+
+#piePagina .contenedor .redesSociales .titulo {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 320px) {
+  #piePagina .contenedor .redesSociales .titulo {
+    font-size: 1.5rem;
+  }
+}
+
+#piePagina .contenedor .redesSociales a {
+  border: 1px solid #04175d;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: #f2f2f2;
+}
+
+#piePagina .contenedor .redesSociales a i {
+  font-size: 2.7rem;
+  color: #04175d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../img/fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+/* Animaciones en nosotros.html */
+.cardNosotros.animate__animated.animate__fadeInLeft {
+  --animate-duration: 3s;
+}
+
+.cardNosotros.animate__animated.animate__fadeInRight {
+  --animate-duration: 3s;
+}
+
+/* Animaciones en contacto,html */
+.ubicacion.animate__animated.animate__fadeInLeftBig {
+  --animate-duration: 2s;
+}
+
+.formulario.animate__animated.animate__fadeInRightBig {
+  --animate-duration: 2s;
+}
+/*# sourceMappingURL=styles.css.map */
