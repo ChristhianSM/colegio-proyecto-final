@@ -264,6 +264,172 @@ main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
   }
 }
 
+main #conocenos {
+  margin-top: 100px;
+}
+
+main #conocenos .titulo-general {
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+  color: #7c0e04;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  main #conocenos .titulo-general {
+    font-size: 2rem;
+  }
+}
+
+main #conocenos .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+main #conocenos .card .info {
+  width: 50%;
+}
+
+main #conocenos .card .info .titulo {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #707070;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  main #conocenos .card .info .titulo {
+    font-size: 1.5rem;
+  }
+}
+
+main #conocenos .card .info .parrafo {
+  line-height: 2;
+  font-weight: 1.7rem;
+}
+
+@media screen and (max-width: 425px) {
+  main #conocenos .card .info .parrafo {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main #conocenos .card .info {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #conocenos .card .info {
+    width: 100%;
+  }
+}
+
+main #conocenos .card img {
+  width: 48%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (max-width: 425px) {
+  main #conocenos .card img {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #conocenos .card img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main #conocenos .card {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 100px;
+  }
+}
+
+main #objetivos {
+  margin-top: 100px;
+}
+
+main #objetivos .titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #04175d;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 425px) {
+  main #objetivos .titulo {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main #objetivos .titulo {
+    width: 100%;
+  }
+}
+
+main #objetivos .parrafo {
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 425px) {
+  main #objetivos .parrafo {
+    font-size: 16px;
+  }
+}
+
+main #objetivos .contenedor-objetivos {
+  text-align: center;
+  gap: 25px;
+  margin-bottom: 15px;
+  color: #0069aa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
 main #admision .contenedorAdmision .titulo {
   margin-top: 100px;
   margin-bottom: 15px;
@@ -274,7 +440,7 @@ main #admision .contenedorAdmision .titulo {
 
 @media screen and (max-width: 320px) {
   main #admision .contenedorAdmision .titulo {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
