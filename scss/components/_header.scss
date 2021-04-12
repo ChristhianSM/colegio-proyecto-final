@@ -41,6 +41,10 @@ header {
                 &:hover{
                     color: #7c0e04;
                     transform: scale(1.6);
+
+                    @media screen and (max-width: 768px){
+                        transform: none;
+                    }
                 }
 
                 &:hover::before {
@@ -92,6 +96,7 @@ header {
         .enlaces.enlacesDos {
             @media screen and (max-width: 768px){
                 transform: translateX(0%);
+                align-items: flex-start;
             }
         }
         

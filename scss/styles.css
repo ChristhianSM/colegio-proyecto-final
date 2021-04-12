@@ -47,6 +47,13 @@ header .menuNavegacion .enlaces a:hover {
           transform: scale(1.6);
 }
 
+@media screen and (max-width: 768px) {
+  header .menuNavegacion .enlaces a:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 header .menuNavegacion .enlaces a:hover::before {
   width: 100%;
 }
@@ -115,6 +122,9 @@ header .menuNavegacion .enlaces a i {
   header .menuNavegacion .enlaces.enlacesDos {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -160,8 +170,32 @@ main #index .textos .titulo {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  main #index .textos .titulo {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 425) {
+  main #index .textos .titulo {
+    font-size: 2.5rem;
+  }
+}
+
 main #index .textos .parrafo {
   font-size: 2.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  main #index .textos .parrafo {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main #index .textos .parrafo {
+    font-size: 1.3rem;
+  }
 }
 
 main {
@@ -170,6 +204,11 @@ main {
 
 main .contenedor {
   width: 70%;
+}
+
+main #beneficios {
+  margin-bottom: 150px;
+  margin-top: 100px;
 }
 
 main #beneficios .titulo {
@@ -266,6 +305,7 @@ main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
 
 main #conocenos {
   margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 main #conocenos .titulo-general {
@@ -378,6 +418,7 @@ main #conocenos .card img {
 
 main #objetivos {
   margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 main #objetivos .titulo {
@@ -611,14 +652,15 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   #nosotros .textoFlotante .textos .titulo {
-    font-size: 1.3rem;
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   #nosotros .textoFlotante .textos .titulo {
+    font-size: 2.5rem;
     margin-top: 0;
   }
 }
@@ -627,15 +669,15 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   font-size: 2.3rem;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   #nosotros .textoFlotante .textos .parrafo {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   #nosotros .textoFlotante .textos .parrafo {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1015,14 +1057,15 @@ main#contacto .textoFlotante .textos .titulo {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   main#contacto .textoFlotante .textos .titulo {
-    font-size: 1.3rem;
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   main#contacto .textoFlotante .textos .titulo {
+    font-size: 2.5rem;
     margin-top: 0;
   }
 }
@@ -1031,15 +1074,15 @@ main#contacto .textoFlotante .textos .parrafo {
   font-size: 2.3rem;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   main#contacto .textoFlotante .textos .parrafo {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   main#contacto .textoFlotante .textos .parrafo {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1331,14 +1374,15 @@ main#contacto .contenedor .formulario .boton:hover {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   #admision_alumnos .textoFlotante .textos .titulo {
-    font-size: 1.3rem;
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   #admision_alumnos .textoFlotante .textos .titulo {
+    font-size: 2.5rem;
     margin-top: 0;
   }
 }
@@ -1347,15 +1391,15 @@ main#contacto .contenedor .formulario .boton:hover {
   font-size: 2.3rem;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   #admision_alumnos .textoFlotante .textos .parrafo {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   #admision_alumnos .textoFlotante .textos .parrafo {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 

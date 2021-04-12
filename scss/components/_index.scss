@@ -10,6 +10,9 @@ main {
 
     #beneficios {
 
+        margin-bottom: 150px;
+        margin-top: 100px;
+        
         .titulo {
             margin-bottom: 50px;
             @include align-text($font-size-title,$color-primary ,center);
@@ -72,6 +75,7 @@ main {
 
     #conocenos{
         margin-top: 100px;
+        margin-bottom: 150px;
 
         .titulo-general{
             font-size: $font-size-title;
@@ -155,6 +159,7 @@ main {
 
     #objetivos{
         margin-top: 100px;
+        margin-bottom: 150px;
 
         .titulo{
             font-size: $font-size-title;

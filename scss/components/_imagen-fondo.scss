@@ -21,9 +21,23 @@ main {
             .titulo {
                 font-size: $font-size-title + 3rem;
                 margin-bottom: 10px;
+
+                @media screen and (max-width: 768px){
+                    font-size: $font-size-title + 1rem;
+                }
+
+                @media screen and (max-width: 425){
+                    font-size: $font-size-title;
+                }
             }
             .parrafo {
                 font-size: $font-size-parrafo + 1rem;
+                @media screen and (max-width: 768px){
+                    font-size: $font-size-parrafo + 0.5rem;
+                }
+                @media screen and (max-width: 425px){
+                    font-size: $font-size-parrafo;
+                }
             }
         }
     }
