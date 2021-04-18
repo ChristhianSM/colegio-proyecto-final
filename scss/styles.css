@@ -1759,6 +1759,24 @@ main#contacto .contenedor .formulario .boton:hover {
 }
 
 @media screen and (max-width: 768px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision .botonEnviar input {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision .botonEnviar input {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #admision_alumnos #formularioAdmision .contenedor .contenedor-admision .botonEnviar input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   #admision_alumnos #formularioAdmision .contenedor {
     width: 90%;
   }
