@@ -291,10 +291,8 @@ main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
   }
 }
 
-@media screen and (max-width: 425px) {
-  main #beneficios .contenedorBeneficios .cardBeneficio ul {
-    margin: 0 auto;
-  }
+main #beneficios .contenedorBeneficios .cardBeneficio ul {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -373,7 +371,7 @@ main #conocenos .card .info .titulo {
 }
 
 main #conocenos .card .info .parrafo {
-  line-height: 2;
+  line-height: 1.5;
   font-weight: 1.7rem;
 }
 
@@ -400,12 +398,22 @@ main #conocenos .card .info .parrafo {
 }
 
 main #conocenos .card img {
-  width: 48%;
+  width: 45%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  border-radius: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  margin: 0 10px;
+}
+
+main #conocenos .card img:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 0px 5px 5px #9c928b;
+          box-shadow: 0px 0px 5px 5px #9c928b;
 }
 
 @media screen and (max-width: 425px) {
@@ -435,7 +443,7 @@ main #conocenos .card img {
 
 main #objetivos {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 130px;
 }
 
 main #objetivos .titulo {
@@ -488,11 +496,22 @@ main #objetivos .contenedor-objetivos {
   width: 100%;
 }
 
+main #objetivos .contenedor-objetivos .card img {
+  height: 100px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+main #objetivos .contenedor-objetivos .card img:hover {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
 main #admision .contenedorAdmision .titulo {
   margin-top: 100px;
   margin-bottom: 15px;
   font-size: 2.5rem;
-  text-align: left;
+  text-align: center;
   color: #04175d;
 }
 
@@ -503,8 +522,9 @@ main #admision .contenedorAdmision .titulo {
 }
 
 main #admision .contenedorAdmision .parrafo {
+  text-align: center;
   font-size: 1.3rem;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 320px) {
@@ -746,6 +766,7 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
 
 #nosotros .contenedorNosotros .cardNosotros .contenedorTextos .parrafo {
   text-align: justify;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 768px) {
@@ -875,7 +896,7 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
 
 #nosotros #equipo .contenedorEquipo .cardEquipo img {
   width: 85%;
-  height: 250px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1109,9 +1130,8 @@ main#contacto .contenedor {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -1166,11 +1186,11 @@ main#contacto .contenedor .ubicacion .mapa iframe {
 }
 
 main#contacto .contenedor .formulario {
-  border: 1px solid #333333;
+  border: 1px solid #e2e1e1;
   border-radius: 5px;
   padding: 30px;
-  -webkit-box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.57);
-          box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 6px 4px 7px -2px rgba(0, 0, 0, 0.74);
+          box-shadow: 6px 4px 7px -2px rgba(0, 0, 0, 0.74);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1486,33 +1506,107 @@ main#contacto .contenedor .formulario .boton:hover {
 }
 
 #admision_alumnos #criterios_admision {
+  margin-top: 100px;
+}
+
+#admision_alumnos #criterios_admision .contenedor-requisitos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  gap: 20px;
+}
+
+#admision_alumnos #criterios_admision .contenedor-requisitos .info {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  #admision_alumnos #criterios_admision .contenedor-requisitos .info {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos #criterios_admision .contenedor-requisitos .info {
+    width: 95%;
+  }
+}
+
+#admision_alumnos #criterios_admision .contenedor-requisitos .imagen {
+  width: 45%;
+  height: 500px;
+}
+
+#admision_alumnos #criterios_admision .contenedor-requisitos .imagen img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+#admision_alumnos #criterios_admision .contenedor-requisitos .imagen img:hover {
+  -webkit-box-shadow: 0px 0px 5px 5px #9c928b;
+          box-shadow: 0px 0px 5px 5px #9c928b;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  #admision_alumnos #criterios_admision .contenedor-requisitos .imagen {
+    width: 80%;
+    height: 400px;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #admision_alumnos #criterios_admision .contenedor-requisitos .imagen {
+    width: 95%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #admision_alumnos #criterios_admision .contenedor-requisitos {
+    margin-bottom: 35px;
+  }
 }
 
 #admision_alumnos #criterios_admision .subtitulo {
   width: 100%;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
 }
 
-#admision_alumnos #criterios_admision ol {
-  width: 100%;
-  list-style-position: inside;
-  margin-bottom: 20px;
+#admision_alumnos #criterios_admision .parrafo {
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
-#admision_alumnos #criterios_admision ol li {
-  margin-bottom: 10px;
+#admision_alumnos #criterios_admision .parrafo span {
+  border-radius: 50%;
+  border: 1px solid;
+  font-size: 1.3rem;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #081d68d7;
+  color: white;
+  text-align: center;
 }
 
 #admision_alumnos #formularioAdmision .contenedor {
@@ -1725,11 +1819,11 @@ main#contacto .contenedor .formulario .boton:hover {
   text-decoration: none;
   margin-bottom: 25px;
   color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #piePagina .contenedor .colegio a:hover {
-  text-decoration: underline;
-  color: #04175d;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
@@ -1772,11 +1866,18 @@ main#contacto .contenedor .formulario .boton:hover {
   text-align: center;
   margin-bottom: 15px;
   background-color: #f2f2f2;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #piePagina .contenedor .redesSociales a i {
   font-size: 2.7rem;
   color: #04175d;
+}
+
+#piePagina .contenedor .redesSociales a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 * {

@@ -48,6 +48,7 @@
                 }
                 .parrafo {
                     text-align: justify;
+                    line-height: 1.5;
                 }
 
                 @media screen and (max-width: 768px){
@@ -138,7 +139,7 @@
 
                 img {
                     width: 85%;
-                    height: 250px;
+                    height: 200px;
                     object-fit: cover;
                     object-position: center;
                     border-radius: 50%;
