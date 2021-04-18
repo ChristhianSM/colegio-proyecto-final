@@ -25,23 +25,23 @@
 </head>
 <body>
     <!-- INICIO -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-      <div class="container-fluid">
-        <img src="./img/logo.png" alt="" width="100px">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-lg-end text-dark " id="navbarNavAltMarkup">
-          <div class="navbar-nav fs-5 ">
-            <a class="nav-link mx-3 text-dark fw-normal" href="./index.html">Inicio</a>
-            <a class="nav-link mx-3 text-dark fw-normal" href="./nosotros.html">Nosotros</a>
-            <a class="nav-link mx-3 text-dark fw-normal" href="./formacion_academica.html">Formacion Academica</a>
-            <a class="nav-link mx-3 text-dark fw-normal" href="./contactos.html">Contactos</a>
-            <a class="nav-link mx-3 bg-azul fw-normal rounded-2" href="/admision.html" >Admision</a>
+    <header >
+      <nav class="menuNavegacion">
+          <div class="logo">
+              <img src="./img/logo.png" alt="logo">
           </div>
-        </div>
-      </div>
-    </nav>
+          <div class="enlaces">
+              <a href="./index.html"> <i class='bx bxs-home'></i> Inicio</a>
+              <a href="./nosotros.html"><i class='bx bxs-card' ></i>Nosotros</a>
+              <a href="#"><i class='bx bxs-book-reader'></i>Formación Académica</a>
+              <a href="./contactos.html"><i class='bx bxs-user'></i>Contáctanos</a>
+              <a href="./admision.html">Admisión</a>
+          </div>
+          <div class="hamburguesa">
+              <img id="hamburguesa" src="./img/menu-24px.svg" alt="menu-hamburguesa">
+          </div>
+      </nav>
+  </header>
 
     <!-- Carrucel -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -52,21 +52,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./img/chico-matematica.jpg" class="d-block w-100 h-75" alt="...">
+          <img src="./img/chico-matematica.jpg" class="d-block w-100 h-75" alt="chico estudiando matematica en su laptop">
           <div class="carousel-caption d-none d-md-block">
             <h2>First slide label</h2>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./img/el-impacto-2.jpg" class="d-block w-100 h-75" alt="...">
+          <img src="./img/el-impacto-2.jpg" class="d-block w-100 h-75" alt="impacto de la tecnologia">
           <div class="carousel-caption d-none d-md-block">
             <h2>Second slide label</h2>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./img/image.jpg" class="d-block w-100 h-75" alt="...">
+          <img src="./img/image.jpg" class="d-block w-100 h-75" alt="Niña estudiando en su tablet">
           <div class="carousel-caption d-none d-md-block">
             <h2>Third slide label</h2>
             <p>Some representative placeholder content for the third slide.</p>
@@ -101,7 +101,7 @@
         <div class="row pb-4">
           <div class=" col-lg-4 col-md-12 col-sm-12 ">
             <div class="card" style="width: 100%;">
-              <img src="./img/imagen-5.jpeg" class="card-img-top" alt="...">
+              <img src="./img/imagen-5.jpeg" class="card-img-top" alt="Chico estudiando en su tablet">
               <div class="card-body text-center">
                 <h5 class="card-title text-center">Inicial</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -120,13 +120,12 @@
                       <div class="modal-body">
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam incidunt corrupti. Cumque fuga ipsum quam at! Error odit aliquid neque quo minus veniam esse, mollitia repellendus deserunt consectetur ducimus repellat expedita molestias voluptas animi est, cumque fuga corrupti vero similique at perspiciatis sequi eius? Laboriosam nesciunt rem veniam vitae iure ab natus enim, nam sint suscipit odit, porro laudantium incidunt quibusdam consequuntur itaque placeat explicabo recusandae aliquid reiciendis ipsa mollitia inventore totam eos? Quidem veniam in magni repellat? Iusto nemo cupiditate sequi blanditiis quibusdam dolore doloremque, suscipit incidunt voluptatibus eos ducimus ut dolorum neque, adipisci quis quo saepe reiciendis.</p>
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam incidunt corrupti. Cumque fuga ipsum quam at! Error odit aliquid neque quo minus veniam esse, mollitia repellendus deserunt consectetur ducimus repellat expedita molestias voluptas animi est, cumque fuga corrupti vero similique at perspiciatis sequi eius? Laboriosam nesciunt rem veniam vitae iure ab natus enim, nam sint suscipit odit, porro laudantium incidunt quibusdam consequuntur itaque placeat explicabo recusandae aliquid reiciendis ipsa mollitia inventore totam eos? Quidem veniam in magni repellat? Iusto nemo cupiditate sequi blanditiis quibusdam dolore doloremque, suscipit incidunt voluptatibus eos ducimus ut dolorum neque, adipisci quis quo saepe reiciendis.</p>
-                        <div class="imagen w-100">
-                          <img src="./img/chico-matematica.jpg"alt="" class="w-100">
+                        <div class="imagen w-75 mx-auto">
+                          <img src="./img/chico-matematica.jpg"alt="Chico estudiando en su PC" class="w-100">
                         </div>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
                   </div>
@@ -136,7 +135,7 @@
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12">
             <div class="card" style="width: 100%;">
-              <img src="./img/imagen-5.jpg" class="card-img-top " alt="...">
+              <img src="./img/imagen-5.jpg" class="card-img-top " alt="niña con tablet">
               <div class="card-body text-center">
                 <h5 class="card-title">Primaria</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -155,13 +154,12 @@
                       <div class="modal-body">
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam incidunt corrupti. Cumque fuga ipsum quam at! Error odit aliquid neque quo minus veniam esse, mollitia repellendus deserunt consectetur ducimus repellat expedita molestias voluptas animi est, cumque fuga corrupti vero similique at perspiciatis sequi eius? Laboriosam nesciunt rem veniam vitae iure ab natus enim, nam sint suscipit odit, porro laudantium incidunt quibusdam consequuntur itaque placeat explicabo recusandae aliquid reiciendis ipsa mollitia inventore totam eos? Quidem veniam in magni repellat? Iusto nemo cupiditate sequi blanditiis quibusdam dolore doloremque, suscipit incidunt voluptatibus eos ducimus ut dolorum neque, adipisci quis quo saepe reiciendis.</p>
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam incidunt corrupti. Cumque fuga ipsum quam at! Error odit aliquid neque quo minus veniam esse, mollitia repellendus deserunt consectetur ducimus repellat expedita molestias voluptas animi est, cumque fuga corrupti vero similique at perspiciatis sequi eius? Laboriosam nesciunt rem veniam vitae iure ab natus enim, nam sint suscipit odit, porro laudantium incidunt quibusdam consequuntur itaque placeat explicabo recusandae aliquid reiciendis ipsa mollitia inventore totam eos? Quidem veniam in magni repellat? Iusto nemo cupiditate sequi blanditiis quibusdam dolore doloremque, suscipit incidunt voluptatibus eos ducimus ut dolorum neque, adipisci quis quo saepe reiciendis.</p>
-                        <div class="imagen w-100">
-                          <img src="./img/educacion_distancia.jpg" alt="" class="w-100">
+                        <div class="imagen w-75 mx-auto">
+                          <img src="./img/educacion_distancia.jpg" alt="Educacion a distancia" class="w-100">
                         </div>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
                   </div>
@@ -171,7 +169,7 @@
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12"">
             <div class="card" style="width: 100%;">
-              <img src="./img/imagen-6.jpeg" class="card-img-top" alt="...">
+              <img src="./img/imagen-6.jpeg" class="card-img-top" alt="estudiando en pc">
               <div class="card-body text-center">
                 <h5 class="card-title text-center">Secundaria</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -190,13 +188,12 @@
                       <div class="modal-body">
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam incidunt corrupti. Cumque fuga ipsum quam at! Error odit aliquid neque quo minus veniam esse, mollitia repellendus deserunt consectetur ducimus repellat expedita molestias voluptas animi est, cumque fuga corrupti vero similique at perspiciatis sequi eius? Laboriosam nesciunt rem veniam vitae iure ab natus enim, nam sint suscipit odit, porro laudantium incidunt quibusdam consequuntur itaque placeat explicabo recusandae aliquid reiciendis ipsa mollitia inventore totam eos? Quidem veniam in magni repellat? Iusto nemo cupiditate sequi blanditiis quibusdam dolore doloremque, suscipit incidunt voluptatibus eos ducimus ut dolorum neque, adipisci quis quo saepe reiciendis.</p>
                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam incidunt corrupti. Cumque fuga ipsum quam at! Error odit aliquid neque quo minus veniam esse, mollitia repellendus deserunt consectetur ducimus repellat expedita molestias voluptas animi est, cumque fuga corrupti vero similique at perspiciatis sequi eius? Laboriosam nesciunt rem veniam vitae iure ab natus enim, nam sint suscipit odit, porro laudantium incidunt quibusdam consequuntur itaque placeat explicabo recusandae aliquid reiciendis ipsa mollitia inventore totam eos? Quidem veniam in magni repellat? Iusto nemo cupiditate sequi blanditiis quibusdam dolore doloremque, suscipit incidunt voluptatibus eos ducimus ut dolorum neque, adipisci quis quo saepe reiciendis.</p>
-                        <div class="imagen w-100">
-                          <img src="./img/imagen-5.jpg"alt="" class="w-100">
+                        <div class="imagen w-75 mx-auto">
+                          <img src="./img/imagen-5.jpg"alt="Estudiando con celular" class="w-100">
                         </div>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
                   </div>

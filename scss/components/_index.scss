@@ -53,6 +53,13 @@ main {
                     }    
                 }
 
+                ul {
+
+                    @media screen and (max-width: 425px){
+                        margin: 0 auto;;
+                    }   
+                }
+
                 @media screen and (max-width: 768px){
                     width: 45%;
                     margin-bottom: 20px;

@@ -83,10 +83,10 @@
 
                 @include display-flex(space-around,center);
 
-                img {
+                .imagen {
 
                     @media screen and (max-width: 768px){
-                        order: 1;
+                        order: 5;
                     }
                 }
             }
@@ -101,10 +101,10 @@
 
                 @include display-flex(space-around,center);
 
-                img {
+                .imagen {
 
                     @media screen and (max-width: 768px){
-                        order: 1;
+                        order: 5;
                     }
                 }
             }
@@ -189,7 +189,6 @@
     #plataforma {
 
         .titulo{
-
             margin-top: 100px;
             margin-bottom: 30px;
             @include align-text($font-size-title,$color-secondary,center);

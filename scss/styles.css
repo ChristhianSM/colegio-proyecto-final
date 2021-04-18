@@ -79,6 +79,10 @@ header .menuNavegacion .enlaces a:nth-child(5) {
           transform: none;
 }
 
+header .menuNavegacion .enlaces a:nth-child(5):hover::before {
+  width: 0%;
+}
+
 @media screen and (max-width: 768px) {
   header .menuNavegacion .enlaces a:nth-child(5) {
     margin-left: 20px;
@@ -284,6 +288,12 @@ main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
 @media screen and (max-width: 320px) {
   main #beneficios .contenedorBeneficios .cardBeneficio .parrafo {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main #beneficios .contenedorBeneficios .cardBeneficio ul {
+    margin: 0 auto;
   }
 }
 
@@ -790,10 +800,10 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
 }
 
 @media screen and (max-width: 768px) {
-  #nosotros .contenedorNosotros .cardNosotros #mision img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  #nosotros .contenedorNosotros .cardNosotros #mision .imagen {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
 }
 
@@ -826,10 +836,10 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
 }
 
 @media screen and (max-width: 768px) {
-  #nosotros .contenedorNosotros .cardNosotros #historia img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  #nosotros .contenedorNosotros .cardNosotros #historia .imagen {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
 }
 
