@@ -387,6 +387,12 @@ main #conocenos .card .info .parrafo {
   font-weight: 1.7rem;
 }
 
+@media screen and (max-width: 768px) {
+  main #conocenos .card .info .parrafo {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 425px) {
   main #conocenos .card .info .parrafo {
     text-align: center;
@@ -442,9 +448,9 @@ main #conocenos .card .imagen:hover {
 @media screen and (max-width: 768px) {
   main #conocenos .card .imagen {
     width: 90%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
 }
 
@@ -458,9 +464,6 @@ main #conocenos .card .imagen:hover {
   main #conocenos .card .imagen {
     width: 90%;
     height: 290px;
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
   }
 }
 
