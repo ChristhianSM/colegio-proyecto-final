@@ -165,7 +165,7 @@
                     position: absolute;
                     left: 20%;
                     right: 20%;
-                    bottom: -30%;
+                    bottom: -35%;
                     color: black;
                     font-size: $font-size-parrafo;
                     transition: all 2s;
@@ -180,6 +180,9 @@
                 grid-template-columns: repeat(3,1fr);
             }
             
+            @media screen and (max-width: 425px){
+                grid-template-columns: repeat(2,1fr);
+            }
             @media screen and (max-width: 320px){
                 grid-template-columns: repeat(2,1fr);
             }

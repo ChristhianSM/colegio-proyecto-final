@@ -22,3 +22,37 @@
 .red-title {
     color: $color-secondary;
 }
+
+// Slider
+.textoSlider{
+    top: 40%;
+    left: 20%;   
+
+    @media screen and (max-width: 768px){
+        left: 10%;;
+    } 
+}
+
+.textoSlider h2 {
+    font-size: 5.5rem;
+
+    @media screen and (max-width: 768px){
+        font-size: 3rem;
+    } 
+    @media screen and (max-width: 425px){
+        font-size: 2.5rem;
+    } 
+}
+.textoSlider p {
+    font-size: 2.3rem;
+
+    @media screen and (max-width: 768px){
+        font-size: 2rem;
+    } 
+    @media screen and (max-width: 425px){
+        font-size: 1.5rem;
+    } 
+    @media screen and (max-width: 320px){
+        font-size: 1rem;
+    } 
+}

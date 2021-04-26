@@ -209,10 +209,6 @@ main #index .textos .parrafo {
   }
 }
 
-main {
-  background-color: white;
-}
-
 main .contenedor {
   width: 70%;
 }
@@ -424,6 +420,8 @@ main #conocenos .card .info .parrafo {
 main #conocenos .card .imagen {
   width: 45%;
   height: 350px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 main #conocenos .card .imagen img {
@@ -433,8 +431,6 @@ main #conocenos .card .imagen img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
   border-radius: 20px;
 }
 
@@ -966,7 +962,7 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   position: absolute;
   left: 20%;
   right: 20%;
-  bottom: -30%;
+  bottom: -35%;
   color: black;
   font-size: 1.3rem;
   -webkit-transition: all 2s;
@@ -981,6 +977,13 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
   #nosotros #equipo .contenedorEquipo {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #nosotros #equipo .contenedorEquipo {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1101,6 +1104,55 @@ main #admision .contenedorAdmision .formularioAdmision .botonEnviar input:hover 
 
 .red-title {
   color: #7c0e04;
+}
+
+.textoSlider {
+  top: 40%;
+  left: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .textoSlider {
+    left: 10%;
+  }
+}
+
+.textoSlider h2 {
+  font-size: 5.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .textoSlider h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .textoSlider h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.textoSlider p {
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .textoSlider p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .textoSlider p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .textoSlider p {
+    font-size: 1rem;
+  }
 }
 
 /* contacto.html */
@@ -1945,7 +1997,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-image: url("../img/fondo.png");
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .contenedor {
